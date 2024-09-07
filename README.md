@@ -24,7 +24,7 @@ This project provides a REST API for calculating Equated Monthly Installments (E
    docker run -d \
      --name postgres-container \
      -e POSTGRES_USER=postgres \
-     -e POSTGRES_PASSWORD=Gaurav@09 \
+     -e POSTGRES_PASSWORD=password \
      -e POSTGRES_DB=emi_calculator \
      -p 5432:5432 \
      postgres:latest
