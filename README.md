@@ -30,7 +30,7 @@ This project provides a REST API for calculating Equated Monthly Installments (E
      postgres:latest
    ```
 
-   This command starts a PostgreSQL container with the database named `emi_calculator`, user `postgres`, and password `Gaurav@09`.
+   This command starts a PostgreSQL container with the database named `emi_calculator`, user `postgres`, and password `password`.
 
 ### Option 2: Using a Local PostgreSQL Installation
 
@@ -44,7 +44,7 @@ This project provides a REST API for calculating Equated Monthly Installments (E
 
    ```sql
    CREATE DATABASE emi_calculator;
-   CREATE USER postgres WITH PASSWORD 'Gaurav@09';
+   CREATE USER postgres WITH PASSWORD 'password';
    ALTER ROLE postgres SET client_encoding TO 'utf8';
    ALTER ROLE postgres SET default_transaction_isolation TO 'read committed';
    ALTER ROLE postgres SET timezone TO 'UTC';
@@ -74,7 +74,7 @@ This project provides a REST API for calculating Equated Monthly Installments (E
    DB_HOST=localhost
    DB_PORT=5432
    DB_USER=postgres
-   DB_PASSWORD=Gaurav@09
+   DB_PASSWORD=password
    DB_NAME=emi_calculator
    PORT=3000
    ```
